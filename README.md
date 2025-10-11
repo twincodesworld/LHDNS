@@ -105,7 +105,7 @@ You can contribute by:
 ### ✳️ Citation
 If you reference this project in research or articles:
 
-```Hemmati, A. (2025). *LHDNS: Ledger-based Hashed Decentralized Naming System*. GitHub Repository. https://github.com/twincodesworld/LHDNS```
+```Hemmati, A. (2025). LHDNS: Ledger-based Hashed Decentralized Naming System. GitHub Repository. https://github.com/twincodesworld/LHDNS```
 
 ---
 
