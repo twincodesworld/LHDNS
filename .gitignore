@@ -1,0 +1,56 @@
+# ---------------------------
+# LHDNS Project Git Ignore
+# ---------------------------
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Temporary and cache files
+*.tmp
+*.temp
+*.bak
+*.swp
+*.log
+
+# Python (if helper scripts are used)
+__pycache__/
+*.py[cod]
+
+# Node / JS (if used for tools)
+node_modules/
+dist/
+build/
+
+# IDE / Editor configs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Backup and autosave
+~$*
+*.backup
+
+# PDF build intermediates
+*.aux
+*.out
+*.toc
+*.lof
+*.lot
+
+# Git-related
+.gitignore
+!.gitignore
+
+# Ignore everything in drafts folder except final
+drafts/*
+!drafts/final*
+
+# ---------------------------
+# Keep only final documents and metadata
+# ---------------------------
+!*.pdf
+!*.md
+!LICENSE
