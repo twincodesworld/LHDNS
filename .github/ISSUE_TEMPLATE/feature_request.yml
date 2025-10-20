@@ -1,0 +1,58 @@
+name: 💡 Feature request
+description: Suggest a new feature, improvement, or protocol enhancement
+title: "[Feature]: "
+labels: ["enhancement"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing ideas to **LHDNS**!  
+        Please fill out this form to describe your proposed feature clearly.
+  - type: input
+    id: summary
+    attributes:
+      label: Summary
+      description: Briefly describe the feature
+      placeholder: "Example: Add relay reputation scoring mechanism"
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: Why is this feature needed? What problem does it solve?
+      placeholder: "Describe the problem or limitation"
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed Solution
+      description: How do you propose to implement it?
+      placeholder: "Outline your idea or approach"
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: Have you considered any other approaches?
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Expected Impact
+      options:
+        - Low
+        - Medium
+        - High
+  - type: textarea
+    id: references
+    attributes:
+      label: References or Related Work
+      description: Cite research, RFCs, or related projects if applicable
+  - type: markdown
+    attributes:
+      value: |
+        ✅ **Before submitting**, please check:
+        - [ ] No existing issue covers this feature
+        - [ ] It aligns with project goals (privacy, decentralization, security)
+        - [ ] You’ve described motivation and proposal clearly

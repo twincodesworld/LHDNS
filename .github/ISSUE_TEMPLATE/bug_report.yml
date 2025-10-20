@@ -1,0 +1,70 @@
+name: 🐞 Bug report
+description: Report a reproducible bug or unexpected behavior in LHDNS
+title: "[Bug]: "
+labels: ["bug"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve **LHDNS**!  
+        Please provide as much detail as possible to help us reproduce and resolve the issue.
+  - type: input
+    id: summary
+    attributes:
+      label: Short Summary
+      description: Briefly describe the bug
+      placeholder: "Example: Resolution entries expire prematurely"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to Reproduce
+      description: List the exact steps or commands to reproduce the issue
+      placeholder: |
+        1. Run ...
+        2. Query ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: What should have happened?
+      placeholder: "Example: The node should accept ledger entry within TTL"
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual Behavior
+      description: What actually happened?
+      placeholder: "Example: Node rejects entry with code 410"
+  - type: input
+    id: version
+    attributes:
+      label: Affected Version
+      description: Version or commit hash (if applicable)
+      placeholder: "v1.0 or commit 123abc"
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      options:
+        - Linux
+        - Windows
+        - macOS
+        - Other
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant Logs or Output
+      description: Paste logs, errors, or screenshots here
+      render: shell
+  - type: markdown
+    attributes:
+      value: |
+        ✅ **Before submitting**, please check:
+        - [ ] The issue has not been reported yet
+        - [ ] You are using the latest version
+        - [ ] You’ve included logs or reproduction steps
